@@ -1,0 +1,22 @@
+﻿# 1. Ignore LaTeX Junk (The clutter)
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.toc
+
+# 2. Ignore Large Data (Save your disk space!)
+*.dta
+*.csv
+*.xlsx
+*.raw
+
+# 3. Ignore the PDF of the paper itself (We can always rebuild this)
+main.pdf
+output.pdf
+
+# 4. BUT... Keep the images! (Even if they are PDFs)
+!figures/*.pdf
+!images/*.pdf

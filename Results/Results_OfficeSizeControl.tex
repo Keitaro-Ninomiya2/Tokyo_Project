@@ -1,0 +1,33 @@
+\begin{table}[h!]
+\centering
+\caption{The effect of military drafting on office composition}
+\begin{tabular}{lcc}
+\toprule
+\textbf{Dependent Variable:} & \multicolumn{2}{c}{Female Share} \\ % New row for dependent variable
+\textbf{Year Range:} & \multicolumn{2}{c}{1946 - 1963} \\
+\midrule
+ & \textit{OLS Estimates} & \textit{IV Estimates} \\ 
+ & (1) & (2) \\ 
+\midrule
+Female Share & 0.227$^{***}$ & 0.306$^{+}$ \\ 
+ & (0.306) & (0.174) \\ 
+log(Office Size) & 0.012$^{***}$ & 0.012$^{***}$ \\ 
+ & (0.002) & (0.002) \\ 
+
+ & & \\ 
+\hline
+First Stage \\
+\hline
+Drafted Share  &  & $-$0.224$^{***}$ \\ 
+ &  & (0.040) \\ 
+\midrule
+Mean of dependent var. & 0.05 & 0.05 \\
+\midrule
+Observations & 15,824 & 15,824 \\ 
+R$^{2}$ & 0.181 & 0.472 \\ 
+F stat & & 4.81 \\
+Adjusted R$^{2}$ & 0.124 & 0.435 \\ 
+\bottomrule
+\multicolumn{3}{p{0.85\textwidth}}{\footnotesize \textit{Note:} This table presents regression estimates. Standard errors are shown in parentheses. \textbf{The Female Share and Drafted Share variables represent the average female and drafted shares of offices to which employees were assigned during the war.} + p $<$ 0.1, * p $<$ 0.05, ** p $<$ 0.01, *** p $<$ 0.001.}
+\end{tabular}
+\end{table}

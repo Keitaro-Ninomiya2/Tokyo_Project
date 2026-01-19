@@ -1,0 +1,31 @@
+\begin{table}[ht]
+\centering
+\caption{Regression Results for Retention}
+\begin{tabular}{lcc}
+\toprule
+& OLS & IV \\ \midrule
+% Second Stage
+Female\_Workers\_Share\_New\_Hire & \num{-0.038}*  & \num{-0.063} \\
+& (\num{0.016})& (\num{0.125}) \\
+\\
+% First Stage
+\midrule
+\textbf{First Stage} & & \\
+\midrule
+duringwar\_Drafted\_Workers\_Share\_Pre & & \num{-0.040}*** \\
+& & (\num{0.005}) \\
+\\
+\midrule
+Num.Obs. & \num{13655} & \num{12686} \\
+\( R^2 \) & \num{0.056} & \num{0.055} \\
+\( R^2 \) Adj. & \num{0.030} & \num{0.030} \\
+RMSE & \num{0.12} & \num{0.12} \\
+Std.Errors & Office\_Position\_Year & Office\_Position\_Year \\
+F-stat & & 69.24 \\
+FE: Year & \checkmark & \checkmark \\
+FE: duringwar\_Position & \checkmark & \checkmark \\
+FE: duringwar\_Division & \checkmark & \checkmark \\
+\bottomrule
+\end{tabular}
+\label{tab:duringwar_results}
+\end{table}

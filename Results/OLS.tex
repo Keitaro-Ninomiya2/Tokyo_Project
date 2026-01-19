@@ -1,0 +1,20 @@
+\begin{table}[h!]
+\centering
+\caption{The effect of military drafting on office composition}
+\begin{tabular}{lllll}
+\hline
+& 1 & 2 & 3 & 4 \\ \hline
+Drafted Share & \num{-0.019}                 & \num{-0.020}                 & \num{0.025}                  & \num{0.036}*                 \\
+& (\num{0.015})                & (\num{0.017})                & (\num{0.017})                & (\num{0.018})                \\
+log(Total Workers)            &                               & \num{-0.001}                 & \num{0.003}+                 & \num{0.004}*                 \\
+&                               & (\num{0.002})                & (\num{0.002})                & (\num{0.002})                \\
+\midrule
+Num.Obs.                                    & \num{16422}                  & \num{16384}                  & \num{16381}                  & \num{16381}                  \\
+R2                                          & \num{0.235}                  & \num{0.235}                  & \num{0.398}                  & \num{0.423}                  \\
+\midrule
+FE: year                                    & X                             & X                             & X                             & X                             \\
+FE: duringwar\_Office                      &                               &                               & X                             & X                             \\
+FE: duringwar\_Position                    &                               &                               &                               & X                             \\
+\hline
+\end{tabular}
+\end{table}

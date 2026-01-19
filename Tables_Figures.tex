@@ -1,0 +1,72 @@
+\begin{figure}[!h]
+    \centering
+    \caption{Impact of the War on Female Employment}
+    \begin{subfigure}[b]{0.48\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{Background/FemaleEntry.png}
+        \caption{Population of Female Public Civil Servants}
+        \label{fig:female-population}
+    \end{subfigure}
+    \hspace*{0.02\linewidth}
+    \begin{subfigure}[b]{0.48\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{Background/FemaleEntryShare.png}
+        \caption{Share of Female Public Civil Servants}
+        \label{fig:female-share}
+    \end{subfigure}
+    \label{fig:TimeSeries}
+\end{figure}
+\clearpage
+
+\input{Background/FiguresTables}
+\clearpage
+
+\input{Background/BalanceTable31}
+\input{Background/BalanceTable36}
+\input{Background/BalanceTable38}
+\clearpage
+
+\input{Background/Logit}
+\clearpage
+
+
+\input{Results/FirstStage_NewFemale_Poisson}
+\input{Results/FirstStage_NewHire_Poisson}
+\clearpage
+
+\input{Results/FirstStage_NewHire_OLS}
+\input{Results/FirstStage_NewFemale_OLS}
+\clearpage
+
+
+
+%\input{Results/OLS}
+\begin{figure}
+    \centering
+    \caption{Effect on Number of Females in Office}
+    \includegraphics[width=0.8\linewidth]{Results/DynamicTreatment_Poisson.png}
+    \caption*{Note: This figure shows the coefficient estimates from the Poisson regression model. Standard errors are clustered at the office-position-year level.}
+    \label{fig:enter-label}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \caption{Effect on Share of Females in Office}
+    \includegraphics[width=0.8\linewidth]{Results/DynamicTreatment_OLS.png}
+    \caption*{Note: This figure shows the coefficient estimates from OLS. Standard errors are clustered at the office-position-year level.}
+    \label{fig:enter-label}
+\end{figure}
+
+
+
+\input{Results/Results_Main2}
+\clearpage
+
+\input{Results/Results_Rehire}
+\clearpage
+%\input{Results/Results_Main_PreModern}
+
+%\input{Results/Results_OfficeSizeControl}
+
+%\input{Results/Results_OfficeSize}
+

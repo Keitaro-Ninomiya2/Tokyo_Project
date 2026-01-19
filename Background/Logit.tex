@@ -1,0 +1,21 @@
+\begin{table}[ht]
+\caption{Logistic regression of Drafted Status on employee position}
+\centering
+\begin{tabular}{rrrrr}
+  \hline
+ & Estimate & Std. Error & t value & Pr($>|t|$) \\ 
+  \hline
+(Intercept) & -5.61 & 0.31 & -18.31 & 0.00 \\ 
+Higher ranked employee & 0.09 & 0.58 & 0.16 & 0.87 \\ 
+Engineer & 1.03 & 0.37 & 2.77 & 0.01 \\ 
+Assistant to higher ranked employee & -25.59 & 27397079.00 & -0.00 & 1.00 \\ 
+Assistant Engineers & -26.62 & 38745320.70 & -0.00 & 1.00 \\ 
+Clerk & 0.93 & 0.35 & 2.65 & 0.01 \\ 
+Part\_time & 1.34 & 0.45 & 3.00 & 0.00 \\ 
+Outsource & 0.24 & 0.65 & 0.37 & 0.71 \\ 
+  \hline
+\end{tabular}
+
+  \multicolumn{3}{p{0.8\textwidth}}{\footnotesize{\textit{Note}: Samples are employees from Tokyo-Fu in 1936. p-values test the null hypothesis that the difference is zero. Significance stars: *** p $<$ 0.001, ** p $<$ 0.01, * p $<$ 0.05.}} 
+
+\end{table}

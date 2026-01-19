@@ -1,0 +1,36 @@
+\begin{table}[ht]
+\centering
+\caption{Effect of Drafting on Hiring Women}
+\captionsetup{font=small, labelfont=bf}
+\begin{threeparttable}
+\begin{adjustbox}{width=\textwidth} % Resize to fit the page width
+\begin{tabular}{lcccc}
+\toprule
+\multicolumn{5}{l}{\textbf{Dependent Variable: Share of female workers among new hires}} \\
+\midrule
+& (1) & (2) & (3) & (4) \\
+\midrule
+Eligible\_Workers                     & -0.007*    & -0.006+    & -0.008***  & -0.008***  \\
+                                      & (0.003)    & (0.003)    & (0.002)    & (0.002)    \\
+Drafted\_Workers\_Share × War         & -0.176*    &            & -0.197***  & -0.159***  \\
+                                      & (0.073)    &            & (0.048)    & (0.037)    \\
+Drafted\_Workers\_Share\_Male × War  &            & -0.170*    &            &            \\
+                                      &            & (0.066)    &            &            \\
+\midrule
+Model & OLS & OLS & OLS & OLS \\
+Mean of Control & 0.06& 0.06& 0.06& 0.06 \\
+Num. Observations                     & 267        & 231        & 269        & 267        \\
+R\textsuperscript{2}                  & 0.759      & 0.777      & 0.590      & 0.636      \\
+Standard Errors                       & by Office-Year & by Office-Year & by Office-Year & by Office-Year \\
+Fixed Effects: Year                   & \checkmark        & \checkmark        & \checkmark        & \checkmark        \\
+Fixed Effects: Division               & \checkmark        & \checkmark        &            & \checkmark        \\
+Fixed Effects: Position               & \checkmark        & \checkmark        & \checkmark        &            \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\begin{tablenotes}
+\small
+\item Notes: Standard errors are clustered by Office-Year. + p $<$ 0.1, * p $<$ 0.05, ** p $<$ 0.01, *** p $<$ 0.001.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

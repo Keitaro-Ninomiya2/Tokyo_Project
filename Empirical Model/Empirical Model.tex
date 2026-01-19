@@ -1,0 +1,42 @@
+\subsection{OLS approach}
+I estimate the following OLS model.
+\begin{equation}
+    Y_{i,j,p, t} = X_{i,j, p} \beta + \iota_{i,j} + \mu_{i,p} + \lambda_t + \epsilon_{i,j, p, t}
+\end{equation}
+$Y_{i,j,p, t}$ is the share of female employees  measure of employee $i$ at time $t+k$. $X_{i,j,p,t}$ is the share of drafted workers in office $j$ of position $p$ at time $t$. $\iota_{i,j}$ and $\mu_{i,p}$ denotes the position and occupation fixed effects for the employee during the war period. $\lambda_t$ denotes the time fixed effect.  
+
+We control for occupation and office fixed effects to avoid confounding the results with different female entry patterns across different departments in the Tokyo-public sector. As discussed in the background section, the entry of female workers happened only in occupations that was occupied by lower tier public servants. By controlling for the occupations and their affiliated departments through the fixed effects, we avoid confounding the results with correlation of female exposure and positional attributes.
+
+%However, one could argue the estimates of $\beta$ recovered could be confounded by remaining omited-variable-bias due to the endogeneity of position assignment. For example, if the workplace is occupied by a manager or office members who are less accommodating to female workers, they may object to letting females work at their office or act hostile towards women and discourage women from entering the workplace. If that were the case, the share of female workers would be correlated with unobserved attributes of the workers in the office. The interpretation of the OLS estimates would be confounded by the possibility that employees that changed the number of working with women were already acceptive towards working with women, and the war itself didn't have much of an effect on the trajectories of the worker. 
+
+\subsection{Instrumental variable approach}
+We estimate the causal effect of office diversification on future outcomes using a instrumental variable strategy.
+\begin{gather}
+    Y_{i,j,p, t} = X_{i,j, p} \beta + \iota_{j} + \mu_p + \lambda_t + \epsilon_{i,j, p, t} \\
+    X_{i,j, p} = Z_{i,j, p} \delta + \iota_j + \mu_p + \lambda_t + \varsigma_{i, j, p, t}
+\end{gather}
+$Z_{i,j,t}$ is the share of employees drafted at $t$. We define $X_{i,j,p,t}$ and $Z_{i,j,p,t}$ as the mean share of female and drafted workers in an office during the war period. 
+
+The identification accures from the cross-sectional variation across workers with different war-time experienced from the war. We are comparing workers in an office with any of their fellow employees getting drafted against those without any disruptions in the workplace and compare their future outcomes.
+
+The interpretation of the IV estimate differs from the OLS estimate. Firstly the estimate avoids committed variable bias and recovers the direct causal impact of working with more women on future career trajectories. However, the IV only recovers estimates for sample with a high probability of getting drafted in the military force. As we covered in the background section, government officials were exempt from drafting and only lower-tier workers who occupied positions as clerk with part-time contracts were non-exempt. Therefore, the IV estimate only recovers the LATE for a subset of the population. Nevertheless the IV estimates do have a causal interpretation, so that the signs of the OLS estimates could be interpreted with more confidence.
+
+The IV estimator will only be estimated through the employees with information on their peers drafting experience. As we discussed in the Data section, only the Tokyo-Fu directory contains the list of drafted employees and their peer in their position and office. However, even after removing the Tokyo-Shi workers from the sample, we remain with approximately 9,000 unique employees from Tokyo-Fu that we can fully measure their peers composition through out the war period. 
+
+In addition, the higher exposure to women during the war may lead employees to leave the workplace than others without exposure. This attrition in the data breaks the balanced-ness of the treated and controlled group based on the treatment status. Aneja, Farina, and Xu 2024 documents that the daughters of male workers exposed to more women during the war were more likely to participate in the labor market compared to their counterparts. Such intergenerational transfer of leniency towards womens' entry to the labor markets could also exists across household partners. The husband exposed to women may become more acceptive towards their partners to enter the labor force, which may also lead to the men to exit the labor force. To account for such scenarios, the estimates should be seen with more caution especially for samples at the end of the time span covered by the data set.
+
+\subsection{Over-identified 2SLS approach (In progress)}
+We also provide estimates of $\beta$ through a over-identified 2SLS approach. Since we can measure the share of military drafted workers and their co-workers in 5 separated years, we can corroborate the estimated system of equations by adding additional instruments. Wooldridge (2010) provides the arguments that when 2SLS with many instruments is more efficient than the IV that aggregates the exogenous variation. We include separate instruments the each measure the share of drafted workers in each office and position pair. The number of instruments in such case would be more than the number of parameters estimated in the second stage regression equation. 
+\begin{equation}
+\begin{aligned}
+Y_{i, j, p, t} & =\sum_{k \in T} X_{i, j, p, k} \beta+\iota_j+\mu_p+\lambda_t+\varepsilon_{i, j, p, t} \\
+X_{i, j, p, k} & =\sum_{l \in T} Z_{i, j, p, l} \delta+\iota_j^{\prime}+\mu_p^{\prime}+\lambda_t^{\prime}+\varsigma_{i, j, p, l} \\
+T & \equiv\{1938,1939,1940,1944\}
+\end{aligned}
+\end{equation}
+For the 2SLS to be more efficient than the the IV, the all the instruments needs have explanatory power on the regressor. We provide estimates 
+
+\subsection{Discussion of Identification Strategy for IV and 2SLS}
+The identification strategy relies on the randomness of the drafting process, conditional on observable controls. We provide a historical background of the drafting procedure and present balanced test results that compare the drafted and non-drafted populations. The exogenous removal of employees from offices led to changes in office composition, thereby altering the working environment for remaining employees. This removal was orthogonal to the employees’ unobserved attributes, strengthening our identification strategy. We attribute observed differences in future outcomes among employees to these draft-driven changes in co-working experiences, interpreting these as causal effects on office composition. 
+
+We provide balanced tables that highlights the randomness of the drafting process. 

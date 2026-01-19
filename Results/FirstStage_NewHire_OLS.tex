@@ -1,0 +1,35 @@
+\begin{table}[ht]
+\centering
+\caption{Effect of Drafting on Hiring}
+\captionsetup{font=small, labelfont=bf}
+\begin{threeparttable}
+\begin{adjustbox}{width=\textwidth} % Resize table to fit page width
+\begin{tabular}{lcccc}
+\toprule
+\multicolumn{5}{l}{\textbf{Dependent Variable: Share of new hires}} \\
+\midrule
+& (1) & (2) & (3) & (4) \\
+\midrule
+Eligible\_Workers                     & 0.039***   & 0.038***   & 0.044***   & 0.046***   \\
+                                      & (0.006)    & (0.006)    & (0.005)    & (0.004)    \\
+Drafted\_Workers\_Share × War         & 0.714***   &            & 0.802***   & 0.895***   \\
+                                      & (0.141)    &            & (0.153)    & (0.126)    \\
+Drafted\_Workers\_Share\_Male × War   &            & 0.634***   &            &            \\
+                                      &            & (0.126)    &            &            \\
+\midrule
+Model & OLS & OLS & OLS & OLS \\
+Num. Observations                     & 1129       & 991        & 1150       & 1325       \\
+\( R^2 \)                             & 0.502      & 0.497      & 0.446      & 0.419      \\
+Standard Errors                       & by Office-Year & by Office-Year & by Office-Year & by Office-Year \\
+Fixed Effects: Year                   & \checkmark        & \checkmark        & \checkmark        & \checkmark        \\
+Fixed Effects: Division               & \checkmark        & \checkmark        &            & \checkmark        \\
+Fixed Effects: Position               & \checkmark        & \checkmark        & \checkmark        &            \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\begin{tablenotes}
+\small
+\item Notes: Standard errors are clustered by Office-Year. + p $<$ 0.1, * p $<$ 0.05, ** p $<$ 0.01, *** p $<$ 0.001.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
