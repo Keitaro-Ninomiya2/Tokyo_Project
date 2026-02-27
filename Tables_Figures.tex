@@ -30,6 +30,7 @@
 \clearpage
 
 
+\input{Results/Drafting_Hiring_Table}
 \input{Results/FirstStage_NewFemale_Poisson}
 \input{Results/FirstStage_NewHire_Poisson}
 \clearpage
@@ -57,9 +58,23 @@
     \label{fig:enter-label}
 \end{figure}
 
+\begin{figure}
+    \centering
+    \caption{Female Employment in Tokyo by Rank Category}
+    \includegraphics[width=0.9\linewidth]{Results/TimeSeriesChihouKomuin.pdf}
+    \caption*{Note: Headcounts are shown on a log scale; the gap reflects the 1946-1949 transition period.}
+    \label{fig:timeseries-chihoukomuin}
+\end{figure}
 
 
-\input{Results/Results_Main2}
+
+\input{Results/IV_ControlFunction_Results}
+\clearpage
+
+\input{Results/ExposureByManager_Table}
+\clearpage
+
+\input{Results/Results_Main}
 \clearpage
 
 \input{Results/Results_Rehire}

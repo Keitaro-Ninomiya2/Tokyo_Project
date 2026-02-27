@@ -1,35 +1,34 @@
-\begin{table}[h!]
+\begin{table}[!h]
+\caption{Long-run effect of exposure to female workers during the war}
 \centering
-\caption{The effect of military drafting on office composition}
+\begin{threeparttable}
 \begin{tabular}{lcc}
 \toprule
+& OLS & IV \\ \midrule
+\# Female New Hire & \num{0.013}** & \num{0.010} \\
+& (\num{0.007}) & (\num{0.036}) \\
+\\
 \midrule
-\textbf{Dependent Variable:} & \multicolumn{2}{c}{Female Share} \\ % New row for dependent variable
-\textbf{Year Range:} & \multicolumn{2}{c}{1946 - 1963} \\
+\textbf{First Stage} & & \\
 \midrule
- & \textit{OLS Estimates} & \textit{IV Estimates} \\ 
- & (1) & (2) \\ 
+\# Drafted Workers & & \num{0.128}*** \\
+& & (\num{0.009}) \\
+\\
 \midrule
-Female Share & $$0.128$^{**}$ & $-$0.414$^{}$ \\ 
- & (0.018) & (0.313) \\ 
- & & \\ 
-\hline
-First Stage \\
-\hline
-Drafted Share  &  & $-$0.088$^{*}$ \\ 
- &  & (0.051) \\ 
-\midrule
-Mean of dependent var. & 0.05 & 0.05 \\
-\midrule
-Observations & 16,381 & 16,381 \\ 
-F stat & & 5.91\\
-Control & \checkmark & \checkmark \\
-Year FE & \checkmark & \checkmark \\
-Office FE & \checkmark & \checkmark \\
-Position FE & \checkmark & \checkmark \\
-R$^{2}$ & 0.181 & 0.472 \\ 
-Adjusted R$^{2}$ & 0.124 & 0.435 \\ 
+Num.Obs. & \num{11405} & \num{10600} \\
+R2 & \num{0.276} & \num{0.272} \\
+F-stat & & 69.24 \\
+FE: year & \checkmark & \checkmark \\
+FE: Position & \checkmark & \checkmark \\
+FE: Division & \checkmark & \checkmark \\
 \bottomrule
-\multicolumn{3}{p{0.85\textwidth}}{\footnotesize \textit{Note:} This table presents regression estimates. Standard errors are shown in parentheses. \textbf{The Female Share and Drafted Share variables represent the average female and drafted shares of offices to which employees were assigned during the war.} * p $<$ 0.1, ** p $<$ 0.5, *** p $<$ 0.01.}
 \end{tabular}
+\begin{tablenotes}
+\centering
+\small
+\item Notes: + p $<$ 0.1, * p $<$ 0.05, ** p $<$ 0.01, *** p $<$ 0.001.\\
+Standard Errors are clustered at the Office $\times$ Occupation $\times$ Year level.
+\end{tablenotes}
+\end{threeparttable}
+\label{tab:regression_results}
 \end{table}

@@ -1,3 +1,10 @@
+\subsection{First-stage: Draft-induced hiring}
+Before turning to the main IV specification, we document that military drafting led to hiring at the position and office level. Because the number of new hires is a count outcome, we estimate Poisson models with fixed effects. Let $Y_{j,p,t}$ denote the number of new hires (or new female hires) in position $p$ within office $j$ in year $t$. The conditional expectation is
+\begin{equation}
+\mathbb{E}[Y_{j,p,t} \mid X] = \exp\left( \beta_1 D_{j,p,t} + \beta_2 \log(M_{j,p,t}+1) + \gamma_j + \delta_p + \lambda_t \right),
+\end{equation}
+where $D_{j,p,t}$ is the number of male workers drafted from that position (or, for spillover specifications, from neighboring positions within the same kakari or ka), $M_{j,p,t}$ is the cumulative male stock (baseline), and $\gamma_j$, $\delta_p$, and $\lambda_t$ are office, position, and year fixed effects. The coefficient $\beta_1$ is a semi-elasticity: a one-unit increase in drafts is associated with a $100 \times \beta_1$\% change in expected hires. We also estimate spillover effects by defining neighboring drafts as (a) drafts in other positions within the same kakari (subsection) but different occupation (engineer, non-engineer, yato), and (b) drafts in positions of the same occupation within the same ka (section). Finally, we allow the immediate draft effect to vary by whether the position is engineer-type or not.
+
 \subsection{OLS approach}
 I estimate the following OLS model.
 \begin{equation}

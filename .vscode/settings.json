@@ -1,0 +1,9 @@
+{
+  "editor.inlineSuggest.enabled": false,
+  "editor.inlineSuggest.suppressSuggestions": true,
+  "editor.suggest.preview": false,
+  "editor.wordBasedSuggestions": "off",
+  "editor.inlayHints.enabled": "off",
+  "cursor.completions.enabled": false,
+  "cursor.tab.enabled": false
+}

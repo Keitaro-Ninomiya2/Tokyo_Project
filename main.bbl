@@ -1,0 +1,153 @@
+\begin{thebibliography}{22}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Acemoglu et~al.(2004)Acemoglu, Autor, and Lyle]{doi:10.1086/383100}
+Daron Acemoglu, David H. Autor, and David Lyle.
+\newblock Women, war, and wages: The effect of female labor supply on the wage structure at midcentury.
+\newblock \emph{Journal of Political Economy}, 112\penalty0 (3):\penalty0 497--551, 2004.
+\newblock \doi{10.1086/383100}.
+\newblock URL \url{https://doi.org/10.1086/383100}.
+
+\bibitem[Alan(2011)]{ALAN2011973}
+Manning Alan.
+\newblock Chapter 11 - imperfect competition in the labor market.
+\newblock volume~4 of \emph{Handbook of Labor Economics}, pages 973--1041. Elsevier, 2011.
+\newblock \doi{https://doi.org/10.1016/S0169-7218(11)02409-9}.
+\newblock URL \url{https://www.sciencedirect.com/science/article/pii/S0169721811024099}.
+
+\bibitem[Aneja et~al.(2024)Aneja, Farina, and Xu]{NBERw32639}
+Abhay Aneja, Silvia Farina, and Guo Xu.
+\newblock Beyond the war: Public service and the transmission of gender norms.
+\newblock Working Paper 32639, National Bureau of Economic Research, June 2024.
+\newblock URL \url{http://www.nber.org/papers/w32639}.
+
+\bibitem[Arai and Nakazawa(2025)]{https://doi.org/10.1111/ecin.13278}
+Natsuki Arai and Nobuhiko Nakazawa.
+\newblock Long-run peer effects and promotion: Evidence from 70-plus years of career records in japan.
+\newblock \emph{Economic Inquiry}, 63\penalty0 (3):\penalty0 740--758, 2025.
+\newblock \doi{https://doi.org/10.1111/ecin.13278}.
+\newblock URL \url{https://onlinelibrary.wiley.com/doi/abs/10.1111/ecin.13278}.
+
+\bibitem[Baker et~al.(1994)Baker, Gibbs, and Holmstrom]{e6fc406f-0b26-3836-8f5c-82e5b9b0d39a}
+George Baker, Michael Gibbs, and Bengt Holmstrom.
+\newblock The internal economics of the firm: Evidence from personnel data.
+\newblock \emph{The Quarterly Journal of Economics}, 109\penalty0 (4):\penalty0 881--919, 1994.
+\newblock ISSN 00335533, 15314650.
+\newblock URL \url{http://www.jstor.org/stable/2118351}.
+
+\bibitem[Bianchi and Giorcelli(2022)]{doi:10.1086/719277}
+Nicola Bianchi and Michela Giorcelli.
+\newblock The dynamics and spillovers of management interventions: Evidence from the training within industry program.
+\newblock \emph{Journal of Political Economy}, 130\penalty0 (6):\penalty0 1630--1675, 2022.
+\newblock \doi{10.1086/719277}.
+\newblock URL \url{https://doi.org/10.1086/719277}.
+
+\bibitem[Cullen and Perez-Truglia(2023)]{10.1257/aer.20210863}
+Zoë Cullen and Ricardo Perez-Truglia.
+\newblock The old boys' club: Schmoozing and the gender gap.
+\newblock \emph{American Economic Review}, 113\penalty0 (7):\penalty0 1703–40, July 2023.
+\newblock \doi{10.1257/aer.20210863}.
+\newblock URL \url{https://www.aeaweb.org/articles?id=10.1257/aer.20210863}.
+
+\bibitem[Dell(2024)]{dell2024deeplearningeconomists}
+Melissa Dell.
+\newblock Deep learning for economists, 2024.
+\newblock URL \url{https://arxiv.org/abs/2407.15339}.
+
+\bibitem[Doepke et~al.(2015)Doepke, Hazan, and Maoz]{10.1093/restud/rdv010}
+Matthias Doepke, Moshe Hazan, and Yishay~D. Maoz.
+\newblock The baby boom and world war ii: A macroeconomic analysis.
+\newblock \emph{The Review of Economic Studies}, 82\penalty0 (3):\penalty0 1031--1073, 03 2015.
+\newblock ISSN 0034-6527.
+\newblock \doi{10.1093/restud/rdv010}.
+\newblock URL \url{https://doi.org/10.1093/restud/rdv010}.
+
+\bibitem[(Ed.)(2013)]{CompilationofHistoricalMaterialsofTokyoII}
+Tokyo Metropolitan~Government (Ed.).
+\newblock Compilation of historical materials of tokyo ii: Establishment of the tokyo metropolitan system (vol. 1). tokyo: Kinokuniya., 2013.
+
+\bibitem[Ferrara(2022)]{doi:10.1086/716921}
+Andreas Ferrara.
+\newblock World war ii and black economic progress.
+\newblock \emph{Journal of Labor Economics}, 40\penalty0 (4):\penalty0 1053--1091, 2022.
+\newblock \doi{10.1086/716921}.
+\newblock URL \url{https://doi.org/10.1086/716921}.
+
+\bibitem[Folke and Rickne(2022)]{10.1093/qje/qjac018}
+Olle Folke and Johanna Rickne.
+\newblock Sexual harassment and gender inequality in the labor market*.
+\newblock \emph{The Quarterly Journal of Economics}, 137\penalty0 (4):\penalty0 2163--2212, 05 2022.
+\newblock ISSN 0033-5533.
+\newblock \doi{10.1093/qje/qjac018}.
+\newblock URL \url{https://doi.org/10.1093/qje/qjac018}.
+
+\bibitem[Giuliano(2018)]{10.1093/oxfordhb/9780190628963.013.29}
+Paola Giuliano.
+\newblock Gender: A historical perspective.
+\newblock In \emph{The Oxford Handbook of Women and the Economy}. Oxford University Press, 07 2018.
+\newblock ISBN 9780190628963.
+\newblock \doi{10.1093/oxfordhb/9780190628963.013.29}.
+\newblock URL \url{https://doi.org/10.1093/oxfordhb/9780190628963.013.29}.
+
+\bibitem[Goldin(2006)]{10.1257/000282806777212350}
+Claudia Goldin.
+\newblock The quiet revolution that transformed women's employment, education, and family.
+\newblock \emph{American Economic Review}, 96\penalty0 (2):\penalty0 1–21, May 2006.
+\newblock \doi{10.1257/000282806777212350}.
+\newblock URL \url{https://www.aeaweb.org/articles?id=10.1257/000282806777212350}.
+
+\bibitem[Goldin and Olivetti(2013)]{101221}
+Claudia Goldin and Claudia Olivetti.
+\newblock Shocking labor supply: A reassessment of the role of world war ii on women{\textquoteright}s labor supply.
+\newblock \emph{American Economic Review}, 103\penalty0 (3):\penalty0 257--262, 2013.
+
+\bibitem[J{\"a}ger et~al.(2025)J{\"a}ger, Heining, and Lazarus]{JaegerDeath}
+Simon J{\"a}ger, J{\"o}rg Heining, and Nathan Lazarus.
+\newblock How substitutable are workers? evidence from worker deaths.
+\newblock \emph{American Economic Review, conditionally accepted}, 2025.
+
+\bibitem[Jaworski(2014)]{Jaworski_2014}
+Taylor Jaworski.
+\newblock “you’re in the army now:” the impact of world war ii on women’s education, work, and family.
+\newblock \emph{The Journal of Economic History}, 74\penalty0 (1):\penalty0 169–195, 2014.
+\newblock \doi{10.1017/S0022050714000060}.
+
+\bibitem[Minni(2025)]{Minni_2025_invisiblehand}
+Virginia Minni.
+\newblock Making the invisible hand visible: Managers and the allocation of workers to jobs.
+\newblock Conditionally accepted, \emph{Quarterly Journal of Economics}, September 2025.
+\newblock URL \url{https://example.com/paper.pdf}.
+
+\bibitem[Oi(1962)]{doi:10.1086/258715}
+Walter~Y. Oi.
+\newblock Labor as a quasi-fixed factor.
+\newblock \emph{Journal of Political Economy}, 70\penalty0 (6):\penalty0 538--555, 1962.
+\newblock \doi{10.1086/258715}.
+\newblock URL \url{https://doi.org/10.1086/258715}.
+
+\bibitem[Ordway(1919)]{doi:10.1086/253212}
+Tead Ordway.
+\newblock The turnover of factory labor. sumner h. slichter.
+\newblock \emph{Journal of Political Economy}, 27\penalty0 (7):\penalty0 615--618, 1919.
+\newblock \doi{10.1086/253212}.
+\newblock URL \url{https://doi.org/10.1086/253212}.
+
+\bibitem[Rose(2018)]{Rose_2018}
+Evan~K. Rose.
+\newblock The rise and fall of female labor force participation during world war ii in the united states.
+\newblock \emph{The Journal of Economic History}, 78\penalty0 (3):\penalty0 673–711, 2018.
+\newblock \doi{10.1017/S0022050718000323}.
+
+\bibitem[Teso(2018)]{10.1093/jeea/jvy010}
+Edoardo Teso.
+\newblock The long-term effect of demographic shocks on the evolution of gender roles: Evidence from the transatlantic slave trade.
+\newblock \emph{Journal of the European Economic Association}, 17\penalty0 (2):\penalty0 497--534, 04 2018.
+\newblock ISSN 1542-4766.
+\newblock \doi{10.1093/jeea/jvy010}.
+\newblock URL \url{https://doi.org/10.1093/jeea/jvy010}.
+
+\end{thebibliography}
