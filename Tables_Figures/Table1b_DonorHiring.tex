@@ -1,0 +1,62 @@
+% Table 1b: Second-order — Hiring at offices that lost workers to poaching
+\begin{table}[htbp]
+\centering
+\begin{threeparttable}
+\caption{Second-Order Hiring: Offices That Lost Workers to Poaching}
+\label{tab:donor-hiring}
+\small
+\textbf{Panel A: Ka (Office) Fixed Effects}\\[1ex]
+\begingroup
+\centering
+\begin{tabular}{lccc}
+   \tabularnewline \midrule \midrule
+   Dependent Variables:   & n\_new\_hires          & n\_new\_hires\_female    & n\_new\_hires\_male\\     
+                          & All hires              & Female hires             & Male hires \\   
+   Model:                 & (1)                    & (2)                      & (3)\\  
+   \midrule
+   \emph{Variables}\\
+   Workers poached away   & $-8.16\times 10^{-6}$  & 0.0001                   & $-1.46\times 10^{-6}$\\    
+                          & (0.0001)               & (0.0005)                 & (0.0001)\\   
+   log(Male baseline + 1) & 0.4596$^{***}$         & 0.3767$^{***}$           & 0.4634$^{***}$\\   
+                          & (0.0342)               & (0.0916)                 & (0.0328)\\   
+   \midrule
+   \emph{Fixed-effects}\\
+   year\_num              & Yes                    & Yes                      & Yes\\  
+   ka\_id                 & Yes                    & Yes                      & Yes\\  
+   pos\_norm              & Yes                    & Yes                      & Yes\\  
+   \midrule
+   Observations           & 6,035                  & 3,248                    & 6,023\\  
+   \midrule \midrule
+\end{tabular}
+\par\endgroup
+\vspace{2ex}
+\textbf{Panel B: Kyoku (Department) Fixed Effects}\\[1ex]
+\begingroup
+\centering
+\begin{tabular}{lccc}
+   \tabularnewline \midrule \midrule
+   Dependent Variables:   & n\_new\_hires          & n\_new\_hires\_female    & n\_new\_hires\_male\\     
+                          & All hires              & Female hires             & Male hires \\   
+   Model:                 & (1)                    & (2)                      & (3)\\  
+   \midrule
+   \emph{Variables}\\
+   Workers poached away   & $-4.01\times 10^{-5}$  & -0.0003                  & $-8.28\times 10^{-6}$\\    
+                          & (0.0001)               & (0.0006)                 & (0.0001)\\   
+   log(Male baseline + 1) & 0.5731$^{***}$         & 0.5237$^{***}$           & 0.5744$^{***}$\\   
+                          & (0.0361)               & (0.0799)                 & (0.0353)\\   
+   \midrule
+   \emph{Fixed-effects}\\
+   year\_num              & Yes                    & Yes                      & Yes\\  
+   kyoku                  & Yes                    & Yes                      & Yes\\  
+   pos\_norm              & Yes                    & Yes                      & Yes\\  
+   \midrule
+   Observations           & 8,470                  & 7,121                    & 8,470\\  
+   \midrule \midrule
+\end{tabular}
+\par\endgroup
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item \textit{Notes:} Sample: positions with NO own drafting. Treatment: workers transferred out. Clustered (office\_id) standard errors in parentheses. $^{*}$~$p<0.10$, $^{**}$~$p<0.05$, $^{***}$~$p<0.01$.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

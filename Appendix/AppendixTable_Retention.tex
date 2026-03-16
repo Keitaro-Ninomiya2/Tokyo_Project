@@ -1,0 +1,40 @@
+\begin{table}[htbp]
+\centering
+\caption{Postwar Retention of 1944 Colleagues (1946--1955)}
+\label{tab:retention_appendix}
+\small
+\begin{threeparttable}
+\begingroup
+\centering
+\begin{tabular}{lcc}
+   \tabularnewline \midrule \midrule
+   Dependent Variable: & \multicolumn{2}{c}{tenure\_postwar}\\
+    & \multicolumn{2}{c}{Retention} \\ 
+   Model:                       & (1)      & (2)\\  
+   \midrule
+   \emph{Variables}\\
+   Draft share                  & -0.1288  & -0.0419\\   
+                                & (0.2345) & (0.2399)\\   
+   Female (=1)                  &          & -0.5192$^{***}$\\   
+                                &          & (0.1307)\\   
+   Draft share $\times$ Female  &          & -0.3388\\   
+                                &          & (0.4196)\\   
+   \midrule
+   \emph{Fixed-effects}\\
+   ka\_id\_1944                 & Yes      & Yes\\  
+   pos\_norm\_1944              & Yes      & Yes\\  
+   \midrule
+   \emph{Fit statistics}\\
+   Observations                 & 3,398    & 3,398\\  
+   R$^2$                        & 0.08863  & 0.09526\\  
+   \midrule \midrule
+   \multicolumn{3}{l}{\emph{Clustered (office\_id\_1944) standard-errors in parentheses}}\\
+   \multicolumn{3}{l}{\emph{Signif. Codes: ***: 0.01, **: 0.05, *: 0.1}}\\
+\end{tabular}
+\par\endgroup
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item \textit{Notes:} OLS regressions. Sample: non-drafted workers observed in 1944. Dependent variable is count of postwar years (1946--1955) appearing in civil service. Column (2) includes gender interaction. All specifications include ka and position fixed effects from 1944 and control for log cumulative male stock. Standard errors clustered at the office level. $^{***}p<0.01$, $^{**}p<0.05$, $^{*}p<0.1$.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

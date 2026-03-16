@@ -1,0 +1,30 @@
+\begin{table}[htbp]
+\centering
+\caption{Gender Composition of Workforce and New Hires (OLS)}
+\label{tab:gender-share}
+\small
+\begin{threeparttable}
+\begin{tabular}{lcccc}
+   \toprule
+   Dependent Variable: & \makecell{Fem. Share\\(All, R1)} & \makecell{Fem. Share\\(All, R2)} & \makecell{Fem. Share\\(New, R1)} & \makecell{Fem. Share\\(New, R2)} \\
+   Model:              & (1) & (2) & (3) & (4) \\
+   \midrule
+   \emph{Variables}\\
+   Any drafted (=1)     & -0.0660 & -0.0060 & 0.3065 & 0.0093 \\
+                        & (0.0604) & (0.0102) & (0.2275) & (0.0188) \\
+   Male baseline        & $-9.49\times 10^{-5}$ & $-8.1\times 10^{-5}$ & $4.57\times 10^{-5}$ & $-9.86\times 10^{-5}$ \\
+                        & (0.0001) & ($5.09\times 10^{-5}$) & (0.0003) & ($7.23\times 10^{-5}$) \\
+   \midrule
+   \emph{Fixed-effects}\\
+   year\_num, ka\_id, pos\_norm & Yes & Yes & Yes & Yes \\
+   \midrule
+   Observations         & 1,165 & 5,448 & 360 & 1,692 \\
+   R$^2$                & 0.49643 & 0.52942 & 0.49610 & 0.31671 \\
+   \bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item \textit{Notes:} OLS regressions for female share. R1 = rank 1 (\emph{yatoi}/temporary), R2 = rank 2 (regular staff). Unit: position $\times$ year (1938--1945). Year, ka, and position fixed effects. Clustered (office\_id) standard errors. $^{***}p<0.01$, $^{**}p<0.05$, $^{*}p<0.1$.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

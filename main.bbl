@@ -1,11 +1,11 @@
-\begin{thebibliography}{22}
+\begin{thebibliography}{23}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[Acemoglu et~al.(2004)Acemoglu, Autor, and Lyle]{doi:10.1086/383100}
+\bibitem[Acemoglu et~al.(2004)Acemoglu, Autor, and Lyle]{Acemoglu}
 Daron Acemoglu, David H. Autor, and David Lyle.
 \newblock Women, war, and wages: The effect of female labor supply on the wage structure at midcentury.
 \newblock \emph{Journal of Political Economy}, 112\penalty0 (3):\penalty0 497--551, 2004.
@@ -70,7 +70,7 @@ Matthias Doepke, Moshe Hazan, and Yishay~D. Maoz.
 Tokyo Metropolitan~Government (Ed.).
 \newblock Compilation of historical materials of tokyo ii: Establishment of the tokyo metropolitan system (vol. 1). tokyo: Kinokuniya., 2013.
 
-\bibitem[Ferrara(2022)]{doi:10.1086/716921}
+\bibitem[Ferrara(2022)]{Ferrara}
 Andreas Ferrara.
 \newblock World war ii and black economic progress.
 \newblock \emph{Journal of Labor Economics}, 40\penalty0 (4):\penalty0 1053--1091, 2022.
@@ -93,12 +93,18 @@ Paola Giuliano.
 \newblock \doi{10.1093/oxfordhb/9780190628963.013.29}.
 \newblock URL \url{https://doi.org/10.1093/oxfordhb/9780190628963.013.29}.
 
-\bibitem[Goldin(2006)]{10.1257/000282806777212350}
+\bibitem[Goldin(2006)]{Goldin}
 Claudia Goldin.
 \newblock The quiet revolution that transformed women's employment, education, and family.
 \newblock \emph{American Economic Review}, 96\penalty0 (2):\penalty0 1–21, May 2006.
 \newblock \doi{10.1257/000282806777212350}.
 \newblock URL \url{https://www.aeaweb.org/articles?id=10.1257/000282806777212350}.
+
+\bibitem[Goldin and Margo(1992)]{GoldinMargoQJE}
+Claudia Goldin and Robert~A. Margo.
+\newblock The great compression: The wage structure in the united states at mid-century.
+\newblock \emph{The Quarterly Journal of Economics}, 107\penalty0 (1):\penalty0 1--34, 1992.
+\newblock \doi{10.2307/2118327}.
 
 \bibitem[Goldin and Olivetti(2013)]{101221}
 Claudia Goldin and Claudia Olivetti.

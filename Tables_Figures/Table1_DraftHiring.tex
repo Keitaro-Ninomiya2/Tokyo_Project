@@ -1,0 +1,37 @@
+\begin{table}[htbp]
+\centering
+\caption{Draft-Induced New Hiring (Poisson)}
+\label{tab:draft-hiring}
+\small
+\begin{threeparttable}
+\begingroup
+\centering
+\begin{tabular}{lcccccccc}
+   \tabularnewline \midrule \midrule
+   Dependent Variables:   & All            & Female         & Male           & Transfers      & All            & Female         & Male           & Transfers\\  
+   Model:                 & (1)            & (2)            & (3)            & (4)            & (5)            & (6)            & (7)            & (8)\\  
+   \midrule
+   \emph{Variables}\\
+   Own drafts             & 0.0352$^{***}$ & 0.0324         & 0.0359$^{***}$ & 0.0501$^{***}$ & 0.0425$^{***}$ & 0.0322         & 0.0438$^{***}$ & 0.0492$^{***}$\\   
+                          & (0.0069)       & (0.0211)       & (0.0067)       & (0.0099)       & (0.0106)       & (0.0200)       & (0.0099)       & (0.0113)\\   
+   log(Male baseline + 1) & 0.4508$^{***}$ & 0.3742$^{***}$ & 0.4551$^{***}$ & 0.1941$^{***}$ & 0.4475$^{***}$ & 0.3748$^{***}$ & 0.4517$^{***}$ & 0.1834$^{***}$\\   
+                          & (0.0317)       & (0.0827)       & (0.0305)       & (0.0467)       & (0.0315)       & (0.0832)       & (0.0303)       & (0.0383)\\   
+   Adjacent drafts        &                &                &                &                & 0.0153$^{**}$  & -0.0025        & 0.0163$^{**}$  & 0.0269\\   
+                          &                &                &                &                & (0.0078)       & (0.0112)       & (0.0075)       & (0.0246)\\   
+   \midrule
+   \emph{Fixed-effects}\\
+   year\_num              & Yes            & Yes            & Yes            & Yes            & Yes            & Yes            & Yes            & Yes\\  
+   ka\_id                 & Yes            & Yes            & Yes            & Yes            & Yes            & Yes            & Yes            & Yes\\  
+   pos\_norm              & Yes            & Yes            & Yes            & Yes            & Yes            & Yes            & Yes            & Yes\\  
+   \midrule
+   \emph{Fit statistics}\\
+   Observations           & 6,497          & 3,556          & 6,482          & 8,818          & 6,497          & 3,556          & 6,482          & 8,818\\  
+   \midrule \midrule
+\end{tabular}
+\par\endgroup
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item \textit{Notes:} Poisson regressions. Unit of observation: office $\times$ position $\times$ year (1938--1945). Dependent variables: count of new hires (all, female, male) and transfers in. Columns (1)--(4): own drafts only. Columns (5)--(8): own drafts and adjacent drafts. All specifications include year, ka, and position fixed effects. Clustered (office\_id) standard errors in parentheses. $^{*}$~$p<0.10$, $^{**}$~$p<0.05$, $^{***}$~$p<0.01$.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

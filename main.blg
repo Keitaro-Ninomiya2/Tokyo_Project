@@ -4,45 +4,45 @@ The top-level auxiliary file: main.aux
 The style file: plainnat.bst
 Database file #1: references.bib
 Warning--empty booktitle in ALAN2011973
-You've used 22 entries,
+You've used 23 entries,
             2773 wiz_defined-function locations,
-            767 strings with 9307 characters,
-and the built_in function-call counts, 9566 in all, are:
-= -- 926
-> -- 375
-< -- 20
-+ -- 133
-- -- 111
-* -- 777
-:= -- 1492
-add.period$ -- 103
-call.type$ -- 22
-change.case$ -- 103
-chr.to.int$ -- 22
-cite$ -- 45
-duplicate$ -- 440
-empty$ -- 848
-format.name$ -- 143
-if$ -- 2032
+            779 strings with 9481 characters,
+and the built_in function-call counts, 10009 in all, are:
+= -- 970
+> -- 396
+< -- 21
++ -- 140
+- -- 117
+* -- 813
+:= -- 1560
+add.period$ -- 107
+call.type$ -- 23
+change.case$ -- 108
+chr.to.int$ -- 23
+cite$ -- 47
+duplicate$ -- 460
+empty$ -- 885
+format.name$ -- 152
+if$ -- 2125
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 18
-newline$ -- 153
-num.names$ -- 88
-pop$ -- 158
+missing$ -- 19
+newline$ -- 159
+num.names$ -- 92
+pop$ -- 165
 preamble$ -- 1
-purify$ -- 81
+purify$ -- 85
 quote$ -- 0
-skip$ -- 311
+skip$ -- 327
 stack$ -- 0
-substring$ -- 433
-swap$ -- 39
+substring$ -- 451
+swap$ -- 40
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 242
+type$ -- 253
 warning$ -- 1
-while$ -- 84
+while$ -- 89
 width$ -- 0
-write$ -- 360
+write$ -- 375
 (There was 1 warning)
