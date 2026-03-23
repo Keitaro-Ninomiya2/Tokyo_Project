@@ -2,13 +2,19 @@
 
 We estimate the effect of military drafting on office-level outcomes using three specifications. The unit of observation is position $\times$ year (1938--1945), unless noted. All specifications include year fixed effects and either ka (section) or kyoku (department) fixed effects, plus position fixed effects. Standard errors are clustered at the office level.
 
-\textbf{Reallocation and hiring (Tables~\ref{tab:reallocation}, \ref{tab:reallocation-newhires}, \ref{tab:gender-hires}).} Count outcomes (new hires, transfers in) are modeled with Poisson regression:
+\textbf{Reallocation and hiring (Tables~\ref{tab:reallocation}, \ref{tab:reallocation-newhires}, \ref{tab:gender-hires}).} Count outcomes (new hires, transfers in) are modeled with OLS:
 \begin{equation}
-\mathbb{E}[Y_{j,p,t} \mid X] = \exp\left( \beta_1 D_{j,p,t} + \beta_2 D_{j,p,t}^{\text{adj}} + \beta_3 \log(M_{j,p,t}+1) + \gamma + \delta_p + \lambda_t \right),
+Y_{j,p,t} = \beta_1 D_{j,p,t} + \beta_2 D_{j,p,t}^{\text{adj}} + \beta_3 \log(M_{j,p,t}+1) + \gamma + \delta_p + \lambda_t + \varepsilon_{j,p,t},
 \end{equation}
-where $Y_{j,p,t}$ is the number of new hires or transfers into position $p$ in office $j$ in year $t$; $D_{j,p,t}$ is the number of male workers drafted from that position; $D_{j,p,t}^{\text{adj}}$ is the number drafted from adjacent positions within the same office; and $M_{j,p,t}$ is the cumulative male stock. The coefficient $\beta_1$ is a semi-elasticity: a one-unit increase in own drafts is associated with a $100 \times \beta_1$\% change in expected hires or transfers.
+where $Y_{j,p,t}$ is the number of new hires or transfers into position $p$ in office $j$ in year $t$; $D_{j,p,t}$ is the number of male workers drafted from that position; $D_{j,p,t}^{\text{adj}}$ is the number drafted from adjacent positions within the same office; and $M_{j,p,t}$ is the cumulative male stock. The coefficient $\beta_1$ measures the change in the expected number of hires or transfers associated with one additional draft from the same position.
 
 \textbf{Gender composition (Table~\ref{tab:gender-share}).} Female share among new hires or among all workers is modeled by OLS. The sample excludes \emph{kanri} (higher-tier civil servant) positions. Treatment is either an extensive margin indicator (any drafted) or draft share (drafted male count / male baseline). We control for cumulative male baseline and the same fixed effects as above.
+
+\textbf{Short-run promotion (Table~\ref{tab:promotion}).} Using a linear probability model, we regress a promotion indicator (rank increased from $t-1$ to $t$) on the number of drafts from the same office, for non-drafted workers observed in consecutive years. Fixed effects are year, ka, and position. We interact the treatment with gender, rank, and engineer indicators.
+
+\textbf{Bonus salary (Table~\ref{tab:rinji}).} We regress the number of workers receiving \emph{rinji tokubetsu} (temporary special) allowances on the number of drafts, in the 1944 cross-section. The unit of observation is position $\times$ office. Fixed effects are ka and position.
+
+\textbf{Retention (Table~\ref{tab:retention}).} We regress an indicator for whether a non-drafted worker appears in the next year's directory on the number of drafts from the same office. Fixed effects are year, ka, and position.
 
 \textbf{Postwar tenure (Table~\ref{tab:future}).} For non-drafted workers observed in 1944, we regress postwar tenure (count of years appearing in civil service through 1955) on drafting exposure in their 1944 office. The unit of observation is the individual; treatment is any drafted or draft share; fixed effects are ka (or kyoku) and position as of 1944.
 
