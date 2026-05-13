@@ -1,0 +1,115 @@
+Here is the conversation as it unfolded, in sequence.
+
+---
+
+**Ninomiya opens** by saying he wants to use the presentation as practice for explaining the paper to outside audiences, and switches to English.
+
+---
+
+**Ninomiya presents the paper** (in English):
+
+The paper studies who fills vacancies created by military drafting. Conflict displaces people from workplaces in two ways: involuntary displacement through conscription, and structural labor reallocation as some sectors get economic benefit and others don't. Despite this, we don't understand how these draft-induced vacancies are filled. The natural framework is a joint process: employers look at the internal market and the external market. They probably try to retain existing staff to mitigate disruption, or transfer existing employees internally. The external market is the final margin.
+
+The paper focuses on how draft-induced vacancies in a large public sector organization were filled, using organizational adjacency to drafted units for identification. The identification assumption relies on the drafting being unpredictable — the process was largely hidden from the public. Conditional on the distribution of workers across office units and occupational roles, who gets drafted is random.
+
+The Tokyo Civil Service had a very multilayer structure: departments → sections (around 35 per department) → teams → occupational roles within teams. The right figure shows the symmetric structure of teams within a section. Geographic dispersion was also wide — a density chart shows over 500 offices in Kōtō ward, with many scattered across the city.
+
+The outcome variable is the count of new hires from a given market segment. The treatment is the count of drafted workers in the office unit. The specification controls for office size (to account for the mechanical relationship between size and draft probability), occupational fixed effects, and section fixed effects (so comparisons are within-section teams). 
+
+One additional drafted worker was met with 0.4 units of internal hiring — twice as much as the 0.2 units from external hiring. Decomposing by organizational proximity: transfers from very nearby teams account for around half of total transfers; offices in the same department but different section contributed about 0.1 units. The geographic distance decomposition shows a symmetric pattern — transfers came from offices very close to the impacted office.
+
+---
+
+**Ninomiya flags a problem himself:** This last result — geographic proximity driving transfers — is actually a problem for identification. It implies a spillover: if team A is drafted, the vacancy is filled from team B. That undermines the strategy because team B is no longer a clean control unit. We have to take that into account.
+
+**Okuyama responds:** Right, because this result implies that if someone is drafted in team A, the vacancy is likely filled by someone from team B. One way to handle this would be a control variable capturing how many workers were drafted in surrounding offices — essentially a spatial lag.
+
+**Ninomiya:** That's interesting but in a sense we are invalidating our own identification. One cleaner approach would be to compare control units in sections where nobody was drafted against control units in treatment sections — a within-section comparison that uses untreated sections as a benchmark. But then you'd need sections where nobody was drafted at all.
+
+**Okuyama:** The concern there is that sections differ from each other in worker composition, so the comparison is not clean.
+
+**Ninomiya:** I can't give an answer off the top of my head. But the key point is that this probably overestimates the effect for nearby transfers. Since the main claim is that within-section transfer is the most important channel, we're potentially overstating that.
+
+---
+
+**Ninomiya continues presenting** the career results:
+
+Offices with drafted personnel increased the number of promoted workers and the number of workers on bonus salary contracts in that period. Transferees sent to a drafted office were more associated with promotions than those sent to non-drafted vacancies. The salary result was less clear — movement was associated with promotion, but whether that promotion came with a salary boost was not obvious. (Note: salary data only exists for the second of the two directories, not the first.)
+
+Regarding early promotion: drafting pulled people from adjacent offices and accelerated the careers of those who moved. The transferees sent to drafted offices performed better in their subsequent careers than people sent to non-drafted vacancies. And proximity of the transfer mattered for career performance — people sent from very nearby offices performed better, consistent with common knowledge enabling better selection of the right person.
+
+---
+
+**Aikawa responds** (in Japanese, group discussion continues):
+
+She shares a paper she sent that is related — on how vacancies are filled from the "narrative" side: women filled wartime gaps, along with older workers and family members, as men aged 14–40 moved to military and weapons production. She asks: can the data show where the external hires came from? Were they women?
+
+**Ninomiya:** We haven't decomposed by gender yet. It's possible that for highly substitutable occupations, you'd see women entering through the external channel, and for specialist occupations, more internal transfer. I think you could decompose this by skill level of occupation.
+
+**Aikawa:** If that pattern came out cleanly — external hires more common for substitutable occupations, consistent with women and older workers filling those roles — that would be a nice result. Maybe the gender angle would be visible at the occupation level even if it's not visible in aggregate.
+
+---
+
+**Okuyama** (one of the senior collaborators present, though his Japanese name suggests this is the Okuyama in the meeting):
+
+From a Japanese economic history perspective, work on internal labor markets using Japanese data — especially public sector, especially at this level of granularity — barely exists. The paper is novel on those terms. But if you're selling to a history audience, the key contribution needs to be: what does this change about our historical understanding? That part isn't yet fully worked out, though the novelty of studying public servants at all is already a contribution in Japanese economic history.
+
+---
+
+**Discussion of framing and audience:**
+
+**Someone in the group:** What's the one-line contribution? The audience question — labor/ILM vs. economic history — leads to different next steps. For labor, you anchor to Jäger–Heining, Mercan–Schoefer, and related ILM literature. For history, you need to update the received narrative.
+
+**Ninomiya:** I think the 2:1 internal-to-external ratio is the first-order finding. A lot of work in macro conflict implicitly assumes external labor market adjustment is the primary margin. This pushes back on that.
+
+**Yoko:** The conflict context is actually quite powerful as a selling point. The standard story — men leave, women replace them — is stated very simply in the literature. What Ninomiya's results show is more nuanced. That's a genuine update. But the direction to develop the paper depends on whether you're targeting labor or history.
+
+**Ninomiya:** For me personally the most interesting thing is still the 2:1 result in the conflict context. And the conflict literature treating external adjustment as the main channel is a real target.
+
+---
+
+**Discussion on the promotion identification problem:**
+
+**Yoko:** Regarding the promotion result — how exactly is the control group defined right now?
+
+**Ninomiya:** The current comparison is: transferees sent to drafted destinations vs. transferees sent to non-drafted destinations. Column 1 compares transferees to their colleagues who stayed at the origin office. Column 3 compares transferees to peers at the destination. Column 2 — transferee to drafted destination vs. transferee to non-drafted destination — is the cleanest because both groups transferred. The concern with destination-side peers is that drafted offices change their own composition through retention bonuses and salary increases, so the peer group is endogenous.
+
+**Yoko:** Even among transferees, there's a selection problem. Who gets sent to a drafted office may not be random — managers or central HR may deliberately send their best person to a hard-hit post. If so, better subsequent career outcomes just reflect ability selection, not a causal effect of the posting.
+
+**Ninomiya:** Agreed, that's the open identification question. One thing that can be done is add pre-transfer performance proxies — commendation and award records — as controls and check whether the coefficient shrinks. If the effect is driven by ability selection, it should fall substantially.
+
+**Okuyama:** Another approach: use the past co-worker network as an instrument. If person X and person Y previously worked together in a rotation, and that office later suffers a draft shock, X is more likely to be tapped — the receiving office knows them. This variation in past co-worker linkage predicts transfer destination in a way that is plausibly orthogonal to current ability.
+
+**Yoko:** That's a good idea. The book she mentioned — which covers hiring processes in Japanese public administration, with the earliest data point around 1970 — discusses exactly this: matching and selection are both involved in internal appointments, networks matter, and organizational culture matters. It's focused on the modern period and on why women don't reach management, but the hiring process description is very detailed.
+
+**Ninomiya:** Yes, and the pre-transfer award records are feasible — I have that data. I've just not added it yet to the promotion regression.
+
+---
+
+**Discussion on the tournament / vacancy chain angle:**
+
+**Yoko:** If internal transfer is the dominant channel, moving someone from B to A creates a secondary vacancy in B. Where does that get filled from? If B was a high-tenure, low-turnover office, pulling someone out may trigger a chain of external hiring downstream. The total external hiring effect may be understated if you only look at first-round responses.
+
+**Ninomiya:** That's testable descriptively — look at whether donor offices subsequently had elevated hiring. Though causally it's hard: offices with high baseline turnover are more likely both to be donor offices and to hire afterward.
+
+**Yoko:** The connection to tournament theory: if draft-induced promotions accelerated lower-ranked workers, it may have changed the incentive structure across the whole organization — who gets promoted, how fast, and what that implies for future vacancy creation.
+
+**Ninomiya:** That's where it gets complicated. If it was older workers filling the gaps left by older draftees — because the 1943 cohort were largely veterans being recalled, not the youngest workers — then it's not young people jumping the queue. It's more like survivors in the same cohort getting unexpected opportunities. That changes the career acceleration story somewhat.
+
+**Someone:** Were the draftees the young or old workers?
+
+**Ninomiya:** At this particular point in the war, the draftees are relatively senior — they're being recalled after having already served. So the people left behind and potentially promoted are not necessarily younger than the draftees. The age profile needs to be documented properly. I've been looking for a compiled source on draftee characteristics but it's scattered — descriptive information exists but I'm not sure a systematic empirical study has been done.
+
+**Yuya:** I'll look into it. There may be military-side databases of those who died in service, which would give characteristics. I'll check.
+
+---
+
+**Wrapping up — next steps agreed:**
+
+**Okuyama:** The two immediate priorities are: (1) address the spillover in the regression, and (2) think through what the promotion analysis is trying to identify before writing the specification — the conversation got complicated verbally.
+
+**Yoko:** I'll write up the proposed IV/identification setup in equations and share it. I think better in equations than in words and it will clarify whether we're talking about the same object.
+
+**Ninomiya:** That would be very helpful. He'll work on the spillover control in the regression and the occupation-level decomposition on his end.
+
+**Group:** Next meeting is Friday 15 May, 17:00 Japan time (09:00 Sweden / 09:00 UK). Yoko will send the calendar invite and Zoom link.

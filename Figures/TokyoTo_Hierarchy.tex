@@ -1,0 +1,25 @@
+% Tokyo-To administrative hierarchy (schematic). pdfLaTeX-safe (Latin labels only).
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+  node distance=1.15cm,
+  box/.style={rectangle, draw=black!70, rounded corners=2pt, align=center,
+    minimum width=6.2cm, minimum height=1.05cm, font=\small},
+  arrow/.style={-{Stealth[length=2.2mm]}, thick, black!75}
+]
+\node[box] (to) {Tokyo Metropolitan Government (\emph{Tokyo-To})};
+\node[box, below=of to] (kyoku) {Kyoku --- bureau / department};
+\node[box, below=of kyoku] (bu) {Bu --- division (when listed)};
+\node[box, below=of bu] (ka) {Ka --- section};
+\node[box, below=of ka] (kakari) {Kakari --- smallest unit (team / desk)};
+\draw[arrow] (to) -- (kyoku);
+\draw[arrow] (kyoku) -- (bu);
+\draw[arrow] (bu) -- (ka);
+\draw[arrow] (ka) -- (kakari);
+\node[below=0.35cm of kakari, font=\footnotesize, text width=11.5cm, align=center]
+  {Headings follow the printed yearbooks; not every branch lists all four levels.
+  The analysis forward-fills these fields so each worker maps to a \emph{ka} and \emph{kakari} for fixed effects.};
+\end{tikzpicture}
+\caption{Administrative hierarchy in Tokyo metropolitan government (\emph{Tokyo-To}) personnel directories. The diagram is schematic; some listings omit a \emph{bu} line or combine labels.}
+\label{fig:tokyo-hierarchy}
+\end{figure}

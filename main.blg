@@ -1,59 +1,46 @@
 This is BibTeX, Version 0.99d (TeX Live 2025)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
-White space in argument---line 5 of file main.aux
- : \citation{Goldin
- :                  and Margo QJE}
-I'm skipping whatever remains of this command
-White space in argument---line 7 of file main.aux
- : \citation{Acemoglu,Autor,and
- :                              Lyle 2004}
-I'm skipping whatever remains of this command
 The style file: plainnat.bst
 Database file #1: references.bib
-Warning--I didn't find a database entry for "Autor"
-Warning--I didn't find a database entry for "Oi"
-Warning--I didn't find a database entry for "Jaeger"
-Warning--empty booktitle in ALAN2011973
-You've used 23 entries,
+You've used 10 entries,
             2773 wiz_defined-function locations,
-            785 strings with 9507 characters,
-and the built_in function-call counts, 10009 in all, are:
-= -- 970
-> -- 396
-< -- 21
-+ -- 140
-- -- 117
-* -- 813
-:= -- 1560
-add.period$ -- 107
-call.type$ -- 23
-change.case$ -- 108
-chr.to.int$ -- 23
-cite$ -- 47
-duplicate$ -- 460
-empty$ -- 885
-format.name$ -- 152
-if$ -- 2125
+            671 strings with 6713 characters,
+and the built_in function-call counts, 4035 in all, are:
+= -- 375
+> -- 162
+< -- 9
++ -- 58
+- -- 48
+* -- 316
+:= -- 635
+add.period$ -- 37
+call.type$ -- 10
+change.case$ -- 46
+chr.to.int$ -- 10
+cite$ -- 20
+duplicate$ -- 192
+empty$ -- 366
+format.name$ -- 62
+if$ -- 842
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 19
-newline$ -- 159
-num.names$ -- 92
-pop$ -- 165
+missing$ -- 8
+newline$ -- 65
+num.names$ -- 40
+pop$ -- 77
 preamble$ -- 1
-purify$ -- 85
+purify$ -- 36
 quote$ -- 0
-skip$ -- 327
+skip$ -- 138
 stack$ -- 0
-substring$ -- 451
-swap$ -- 40
-text.length$ -- 3
+substring$ -- 169
+swap$ -- 12
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 253
-warning$ -- 1
-while$ -- 89
+type$ -- 110
+warning$ -- 0
+while$ -- 39
 width$ -- 0
-write$ -- 375
-(There were 2 error messages)
+write$ -- 149

@@ -1,0 +1,20 @@
+\subsection{Construction of regression variables (details)}
+\label{sec:appendix-variables}
+
+This subsection maps the master panel to the dependent and independent variables used in the Empirical Model and in the results tables. Unless noted, position enters as whitespace-stripped titles, and year enters as calendar year. Standard errors cluster at the office identifier.
+
+Treatment (draft exposure). For each office $j$, normalized position $p$, and year $t$, let $D_{jpt}$ denote the count of drafted \emph{male} workers attached to that office--position in $t$. Let $M_{jpt}$ denote the count of distinct male workers observed in $(j,p)$ at any date strictly before $t$; we control for $\log(M_{jpt}+1)$ as a size measure. Female workers are excluded from $D_{jpt}$ so the treatment reflects conscription of men.
+
+Transfers and new hires. Sorting workers by person identifier and year, we compare each worker's current office (and \emph{ka}, \emph{kyoku}, \emph{kakari}) to the previous year. An incoming transfer is a worker present in year $t$ whose prior-year office differs; mutually exclusive counts classify transfers by whether the origin shares the same \emph{ka} and \emph{kyoku}, shares \emph{kyoku} only, or lies in a different \emph{kyoku}, accounting for the 1943 administrative merger via a bureau crosswalk. A new hire is a worker who appears for the first time in year $t$, excluding the first year a newly opened office appears in the data. Female and male new hires are split using the modern gender classification.
+
+Rank buckets for interactions. Positions are mapped to three ranks for heterogeneity: rank~1 (temporary/contract titles such as \emph{yatoi}/\emph{shokutaku}), rank~3 (supervisory or designated senior titles, with rules that depend on whether the year is before or after 1948), and rank~2 (all other classified titles). The engineer indicator flags positions whose normalized title contains the engineering marker used in the administrative job list.
+
+Promotion. For non-draft workers observed in consecutive years in the same office, promotion is an indicator that the discrete rank category increases from $t-1$ to $t$.
+
+Retention. For non-draft workers, retention is an indicator that the person appears again in year $t$ conditional on appearing in $t-1$, with office--position assignment taken from the directory.
+
+Bonus pay (\emph{rinji}). The dependent variable is the count of workers in $(j,p)$ with a recorded \emph{rinji tokubetsu} allowance in the 1944 cross-section (or the year specified in the table).
+
+Composition and tenure. At the position $\times$ kakari $\times$ year level, female share is the share of workers classified as female under the modern gender rule; average tenure is mean years since first appearance in the panel, computed within the relevant sample restrictions.
+
+Fixed effects. We form section fixed effects by combining bureau and section labels so that effects nest within bureau where both are observed. Year, section, and position fixed effects match the tables in the paper; some specifications use bureau or office identifiers as noted in each table's notes.
